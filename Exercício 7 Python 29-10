@@ -1,0 +1,6 @@
+Nome = input("Digite o Nome do Produto:")
+Preco = float (input("Digite o Preço:"))
+porcetagem= float(input("Digite o Valor da portacegem"))
+Desconto = ( Preco * porcetagem)/100
+Precoliq= Preco - Desconto
+print("Nome do Produto:", Nome,"\n""Preço:",Preco,"\n""Desconto:", Desconto,"\n""Preço Desconto:", Precoliq)
