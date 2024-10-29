@@ -1,0 +1,11 @@
+Nome= input("Digite o Nome do funcionário:")
+Salario= float (input("Digite o Salário:"))
+
+INSS = ( Salario * 10) / 100
+VT = ( Salario * 6) / 100
+
+print("Nome:", Nome,"\n""Salário:",Salario,"\n""INSS:", INSS,"\n""VT:", VT )
+
+Salarioliq = Salario - INSS - VT
+
+print ("Salário Liquído é:", Salarioliq)
