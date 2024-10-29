@@ -1,0 +1,6 @@
+Nome = input("Digite o Nome do Produto:")
+Preco = float (input("Digite o Preço:"))
+Qtd = int(input("Digite a quantidade do produto"))
+Vtotal = ( Qtd * Preco)
+
+print("Nome do Produto:", Nome,"\n""Qtd:",Qtd,"\n""Preço:",Preco,"\n""Valor Total:", Vtotal)
