@@ -1,0 +1,8 @@
+a = float (input('Digite 1º número: '))
+b = float (input('Digite 2º número: '))
+c = float (input('Digite 3º número: '))
+d=  float (input('Digite 4º número: '))
+
+soma = a + b + c + d
+
+print(" Resultado da soma é:", soma)
