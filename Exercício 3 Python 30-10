@@ -1,0 +1,7 @@
+Nome = input ("Digite o seu nome:")
+salario= float (input("Digite sua Salário:"))
+if  salario < 2000:
+    print (" Desconto não aplicável.")
+else: 
+    desconto = salario * 0.10
+    print ("Nome:",Nome,"\n""Salario:",salario,"\n""Desconto:",desconto)
