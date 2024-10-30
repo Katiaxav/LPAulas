@@ -1,0 +1,9 @@
+Nome : input ("Digite o seu nome:")
+idade = float (input("Digite sua idade:"))
+if idade <= 16:
+    print (" O você é menor de idade:", idade, " Não precisa votar.")
+elif idade == 17 or idade >=71:
+    print (" Você é maior de idade:", idade, "seu voto é facultativo.")
+else:
+ 
+    print (" Seu voto é obrigatório.")
