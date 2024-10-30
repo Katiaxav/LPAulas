@@ -1,0 +1,14 @@
+Nome = input ("Digite o seu nome:")
+Peso = float (input("Digite seu Peso:"))
+Altura = float (input("Digite sua Altura:"))
+imc = Peso/Altura**2
+if imc <18.5:
+    print ("Você está baixo do peso.")
+elif imc >18.5 and imc <=24.9:
+    print ("  Você está com peso adequado. ")
+elif imc >= 25 and imc <= 29.9:
+    print ("Você está sobrepeso.")
+elif imc >= 30 and imc <= 34.9:
+    print ("Você está obesidade.")
+    
+print ("Nome:",Nome,"\n""Peso:",Peso,"\n""Altura:",Altura,"\n""IMC:",imc)
