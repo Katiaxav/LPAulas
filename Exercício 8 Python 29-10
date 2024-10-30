@@ -1,0 +1,9 @@
+C = float (input("Digite o Valor Inicial:"))
+porcetagem = 0.02
+t= int(input("Digite o tempo:"))
+M = C * ( 1 + 0.02)/t
+
+print("Valor Inicial:", C)
+print("Período:",t)
+print("Taxa:", porcetagem)
+print ("Valor Final:",M)
