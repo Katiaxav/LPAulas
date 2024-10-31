@@ -1,0 +1,13 @@
+numero = int (input("Digite 1º numero:"))
+
+print (numero, "X 0 = ", numero * 0)
+print (numero, "X 01 = ", numero * 1)
+print (numero, "X 02 = ", numero * 2)
+print (numero, "X 03 = ", numero * 3)
+print (numero, "X 04 = ", numero * 4)
+print (numero, "X 05 = ", numero * 5)
+print (numero, "X 06 = ", numero * 6)   
+print (numero, "X 07 = ", numero * 7)
+print (numero, "X 08 = ", numero * 8)
+print (numero, "X 09 = ", numero * 9)
+print (numero, "X 10 = ", numero * 10)
