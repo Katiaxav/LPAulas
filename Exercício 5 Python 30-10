@@ -1,0 +1,8 @@
+numero = float (input("Digite Valor em real:"))
+resposta = input ("Você deseja o valor em dolar ou euro?")
+dolar = numero / 5.71
+euro = numero / 6.26
+if resposta == "euro":
+    print ("O valor em real é:",numero, "O Valor em euro é",euro)
+elif resposta == "dolar":
+    print (" O Valor em real é:",numero,"O Valor em dolar é", dolar)
