@@ -1,0 +1,35 @@
+Nome = input("Digite o Nome do funcionário:")
+salario = float (input("Digite o Salário:"))
+
+VT = ( salario * 0.06)
+
+if  salario <= 1412:
+    INSS = ( salario * 0.075)
+elif salario >= 1412.01 and salario <= 2666.68: 
+    INSS = ( salario * 0.09) - 21.18
+elif salario >= 2666.69 and salario <= 4000.03: 
+    INSS = ( salario * 0.12) - 101.18
+elif salario >= 4000.04 and salario <= 7786.02:
+    INSS = ( salario * 0.14) - 181.18
+
+if salario <= 2259.20:
+     IR = 0
+elif salario >= 2259.21 and salario <= 2826.65:
+     IR = (salario * 0.075) - 169.44
+elif salario >= 2826.66 and salario <= 3751.05:
+     IR = ( salario * 0.15) - 381.44
+elif salario >= 3751.06 and salario >= 4664.68:
+     IR = (salario * 0.225) - 662.77
+elif salario >= 4664.69:
+     IR = (salario * 0.275) - 896.00
+     
+salarioliq = salario - INSS - IR - VT
+
+print ()
+print ("Nome do Funcionário:",Nome)
+print ("Salário:",salario)
+print ("INSS:", INSS)
+print ("VT:", VT)
+print ("Imposto de Renda:",IR)
+
+print ("Salário Liquído é:", salarioliq)
