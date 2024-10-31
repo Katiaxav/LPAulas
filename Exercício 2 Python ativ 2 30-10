@@ -1,0 +1,3 @@
+numero = int (input("Digite 1º numero:"))
+
+print ("Quadrado é:", numero **2)
