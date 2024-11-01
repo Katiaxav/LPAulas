@@ -1,0 +1,5 @@
+Nome = input("Digite o Nome do Produto:")
+preco = float (input("Digite o valor do produto:"))
+desconto  = ( preco * 10) / 100
+precodesc = ( preco - desconto)
+print("Nome:", Nome,"\n""Preço:",preco,"\n""Desconto:", desconto,"\n""Preço com desconto:", precodesc)
