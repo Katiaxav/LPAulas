@@ -1,0 +1,3 @@
+Nome= float(input("Digite o grau celsius: "))
+kelvin= Nome + 273
+print("O valor em Kelvin ", kelvin)
