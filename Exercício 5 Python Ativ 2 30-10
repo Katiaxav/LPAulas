@@ -1,0 +1,3 @@
+numero1 = float(input("Digite valor Dolar:"))
+real = numero1 * 5.70
+print ("Dolar:US$", numero1,"\n""Real: R$", real)
