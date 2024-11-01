@@ -1,0 +1,26 @@
+Nome = input("Digite o nome do produto:")
+Preco = float(input("Digite o preco do produto?"))
+Qtd = int ( input("Digite a quantidade do produto."))
+pagamento = input("Digite forma de pagamento, pix ou cartão apenas 1x ou 2x?")
+
+if pagamento == "pix":
+   desconto = ( preco * 0,10) 
+   Vtotal = Preco - desconto
+   print("O valor Total do Pix com desconto é:", Vtotal)
+
+if  pagamento == "cartão 1x":
+    Vtotal = Preco * Qtd
+    print ("O valor do cartão é:", Vtotal)
+    
+elif pagamento == "cartão 2x":
+    acrescimo = (Preco * 0.05)
+    Vtotal = Preco + acrescimo * Qtd
+    print ("O valor do cartão com acrescímo é:",Vtotal)
+    
+    print()
+    print ("Nome:",Nome)
+    print ("Preço:",Preco)
+    print ("Qtd é:",Qtd)
+    print ("Pagamento:",pagamento)
+    print ("Valor total:",Vtotal)
+  
