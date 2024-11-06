@@ -1,0 +1,12 @@
+nome = input('Digite seu nome:')
+while True :
+     print("Você deseja digitar um novo nome:" )
+     resposta = input()
+     if resposta == "sim":
+        nome = input ("Digite seu nome:")
+        continue
+     
+     elif resposta =="não":
+          break
+     else:
+         print("Programa encerrado.")
