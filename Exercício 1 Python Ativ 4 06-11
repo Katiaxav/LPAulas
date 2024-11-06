@@ -1,0 +1,12 @@
+Nome = input ("Digite o seu nome:")
+idade = float (input("Digite sua idade:"))
+sexo = input ("Digite o seu sexo? M ou F")
+print()
+if idade <= 17:
+    print ("Você é menor de idade:")
+elif idade >= 18:
+    print("Você é maior idade. ")
+if sexo == 'M':
+     print (" Masculino:")
+elif sexo == 'F':
+    print(" Feminino.")
