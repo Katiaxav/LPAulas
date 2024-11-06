@@ -1,0 +1,6 @@
+numero = int (input("Digite um numero:"))
+contador = 0
+while (contador < 11):
+     tabuada = numero * contador
+     print (f'{numero} x { contador } = {tabuada}')
+     contador = contador + 1
