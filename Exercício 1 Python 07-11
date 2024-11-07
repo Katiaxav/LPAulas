@@ -26,7 +26,7 @@ elif  soma >=10 and soma <= 12:
     print ("Ansiedade acima do limite procure ajuda médica.")
     
 else:
-    ("Parabéns você está ótimo.")
+  print("Parabéns você está ótimo.")
 
 print ("Qual seu nome:",Nome)   
 print ("Qual sua idade:",idade)
