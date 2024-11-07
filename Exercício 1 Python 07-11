@@ -1,0 +1,33 @@
+Nome = input ("Digite o seu nome:")
+idade = int (input("Digite sua idade:"))
+
+Q1 = int(input("Na última semana você se incomodou com Dormência ou Formigamento sem motivo? 1-sim ou 0-não"))
+Q2 = int(input("Na última semana você se incomodou com Sensação de Calor? 1-sim ou 0-não"))
+Q3 = int(input("Na última semana você se incomodou com Sensação de Desmaio? 1-sim ou 0-não"))
+Q4 = int(input("Na última semana você ficou com Medo de Morrer? 1-sim ou 0-não"))
+Q5 = int(input("Na última semana você ficou Assutado(a)? 1-sim ou 0-não "))
+Q6 = int(input("Na última semana você se sentiu Sufocado(a)? 1-sim ou 0-não"))
+Q7 = int(input("Na última semana você ficou Nervoso(a)? 1-sim ou 0-não"))
+Q8 = int(input("Na última semana você ficou Aterrorizado(a)? 1-sim ou 0-não"))
+Q9 = int(input("Na última semana você se incomodou com Dificuldade em Relaxar? 1-sim ou 0-não"))
+Q10 = int(input("Na última semana você se incomodou com Falta de Equilíbrio? 1-sim ou 0-não"))
+Q11 = int(input("Na última semana você ficou com Medo de que algo de ruim aconteça ? 1-sim ou 0-não"))
+Q12 = int(input("Na última semana você ficou com o corpo Trêmulo? 1-sim ou 0-não"))
+
+soma = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10+Q11+Q12
+
+if soma <= 3 :
+   print ("Baixo nível de ansiedade:")
+elif  soma >=4 and soma <= 6:
+    print ("Moderado nível de ansiedade:")
+elif  soma >=7 and soma <= 9:
+       print ("Alto nível de ansiedade:")
+elif  soma >=10 and soma <= 12:
+    print ("Ansiedade acima do limite procure ajuda médica.")
+    
+else:
+    ("Parabéns você está ótimo.")
+
+print ("Qual seu nome:",Nome)   
+print ("Qual sua idade:",idade)
+print ("Somatória dos pontos:", soma)
