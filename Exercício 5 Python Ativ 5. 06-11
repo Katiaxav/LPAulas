@@ -1,0 +1,29 @@
+Nome = input ("Nome do Hóspede:")
+quarto = input ("Qual tipo de quarto? Solteiro ou Casal")
+dias = int (input ("Quantidade de dias."))
+pgto = input('Qual a forma de pagamento? pix ou cartão')
+
+if quarto == "solteiro" and pgto=="pix":
+    diaria= dias * 100    
+    desconto =diaria*0.1
+    V_total = diaria - desconto
+    print ("Valor a pagar:", V_total)
+elif quarto =="solteiro" and pgto == "cartão":
+    diaria = dias * 100
+    print ("Valor total a pagar é:", diaria)
+        
+if quarto == "casal" and pgto =="pix":
+    diaria = dias * 170
+    desconto = diaria * 0.1
+    V_total = diaria - desconto
+    print ("Valor a pagar:", V_total)
+elif quarto == "Casal" and pgto == "cartão":
+    diaria == dias * 170 
+    print ("Valor Total a pagar é:", diaria)
+    
+print ("Nome do Hospede é:",Nome)
+print ("Tipo de Quarto é:",quarto)
+print ("Nº de dias:", dias)
+print ("Valor total:",diaria)
+print ("Desconto é:",desconto)
+print ("Valor a pagar é:",V_total)
