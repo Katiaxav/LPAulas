@@ -1,0 +1,10 @@
+Nome = input("Digite o Nome do Produto:")
+preco = float (input("Digite o valor do produto:"))
+ICMS = float(input("Digite a porcetagem do ICMS:"))
+ic  = ( preco * ICMS) / 100
+pis = ( preco * 0.0065)
+cofins = (preco * 0.03 )
+V_total = (ICMS + pis + cofins)
+print("Nome:",Nome,"\n""Preço:",preco,"\n""Valor do ICMS:", ic,"\n""Valor do Pis é:", pis,"\n""Valor do Cofins é:", cofins,"\n""Valor Total:",V_total)
+
+
