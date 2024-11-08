@@ -1,0 +1,23 @@
+num1 = int(input('Digite 1º numero:'))
+num2 = int(input("Digite o expoente:"))
+
+potencia = num1**num2 
+
+print(potencia)
+
+while True :
+     print("Você deseja um novo expoente:" )
+     resposta = input()
+     
+     if resposta == "sim":
+        num1 = int(input('Digite 1º numero:'))
+        num2 = int(input("Digite 2º numero:"))
+        
+        potencia = num1**num2  
+        
+        print(potencia)
+        
+        continue
+     
+     elif resposta =="não":
+          break
