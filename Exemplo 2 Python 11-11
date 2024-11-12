@@ -1,0 +1,19 @@
+# Inicializa uma lista vazia para armazenar os nomes e idade
+pessoas = []
+
+while True:
+    # Solicita que o usuário insira um nome
+    nome = input ('Digite um nome:')
+    idade = input ('Digite uma idade:')
+    pessoas.append((nome, idade)) # Adiciona o nome à lista
+
+    # Pergunta se o usuário deseja inserir um novo nome
+    continuar = input ("Deseja inserir um novo nome?(s/n):")
+    
+    if continuar != 's' and continuar == 'n':
+        break # sair do loop se o usuário não quiser continuar
+
+# Exibe todos os nomes inseridos
+print("\nRegistros:")
+for pessoa in pessoas:
+    print(pessoa[0],pessoa[1])
