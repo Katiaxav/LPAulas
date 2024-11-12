@@ -1,0 +1,9 @@
+numeros=[]
+contador=1 
+
+while contador <=4:
+    numero=int(input('Digite um número:'))
+    numeros.append(numero)
+    contador=contador +1 
+    
+print(numeros)
