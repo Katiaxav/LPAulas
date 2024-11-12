@@ -1,0 +1,17 @@
+cadastros=[]
+
+# cadastros de login e senha 
+while True:
+    login=input("Digite o seu nome:")
+    senha= int(input("Digite uma senha"))
+    cadastros.append((login,senha)) 
+    
+    continuar = input('Deseja fazer um novo login?s/n')
+    
+    if continuar!='s'and continhar=='n':
+        break
+        # código finalizado
+        
+print('\nLogine senha inseridos:')
+for cadastro in cadastros:
+    print(cadastro[0], casdatro[1])
