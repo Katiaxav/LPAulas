@@ -1,0 +1,18 @@
+# Inicializa uma lista vazia para armazenar os nomes
+nomes = []
+
+while True:
+    # Solicita que o usuário insira um nome
+    nome = input ('Digite um nome:')
+    nomes.append(nome) # Adiciona o nome à lista 
+    
+    # Pergunta se o usuário deseja inserir um novo nome
+    continuar = input ("Deseja inserir um novo nome?(s/n):")
+    
+    if continuar != 's' and continuar == 'n':
+        break # sair do loop se o usuário não quiser continuar
+
+# Exibe todos os nomes inseridos
+print("\nNomes inseridos:")
+for nome in nomes:
+    print (nome)
