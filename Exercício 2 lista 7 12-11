@@ -1,0 +1,14 @@
+pessoas= []
+contador = 1 
+
+while contador <=3:
+   #solicita que o usuário insira um nome
+    Nome = input('Digite o seu nome.')
+    idade = input('Digite sua idade?')
+    pessoas.append((Nome, idade))
+    contador = contador +1
+    
+#Exibe todos nomes inseridos
+print("\nRegistros:")
+for pessoa in pessoas:
+    print(pessoa[0],pessoa[1])
