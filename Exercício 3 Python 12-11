@@ -1,0 +1,18 @@
+while True:
+    calculo = input("Qual cálculo deseja realizar área, triângulo,quadrado ou pi?")
+    num = input(" Informe um valor a ser cálculado.")
+   
+    if calculo == "triângulo":
+       area = b*h/2
+       print("A área do triângulo é:", total)
+   
+    elif calculo == "quadrado":
+         area = b * l
+         print ("A área do quadrado é:", calculo)
+         
+    elif calculo == "pi":
+         valor = num * 3.14
+         print ("O valor do pi é:", valor)
+    
+     break
+        # código finalizado
