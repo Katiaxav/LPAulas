@@ -1,0 +1,22 @@
+rep01='s'
+while rep01=='s':
+
+    
+    print('Qual calculo você deseja?')
+    print('área do triângulo.')
+    print('área do quadrado.')
+    print('Valor de PI.')
+    print()
+    resposta=input()
+
+    if resposta=='área do triângulo':
+        base=float(input('Informe a base do triângulo: '))
+        altura=float(input('Informe a altura do triângulo: '))
+        area=(base*altura)/2
+        print('Área do triângulo informado é: ',area)
+    elif resposta=='área do quadrado':
+        lado=float(input('Digite o lado do quadrado: '))
+        area=lado*lado
+        print('A área do quadrado é: ', area)
+    elif resposta=='Valor de PI':
+        print('O valor de PI é:  3.14159265358979323846')
