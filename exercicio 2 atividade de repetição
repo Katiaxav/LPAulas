@@ -1,0 +1,17 @@
+resposta='s'
+
+while resposta=='s':
+    nome=input('Digite o nome do produto desejado: ')
+    preco_produto=float(input('Digite o preço do produto selecionado: '))
+    Form_pagamento=input('A forma de pagamento será em no pix, no cartão ')
+
+    
+    if Form_pagamento=='pix':
+        total=preco_produto - (preco_produto*0.15)
+        desconto=preco_produto*0.15
+        print('Nome do produto: ',nome,'\nPreço: ',preco_produto,'\nDesconto: ',desconto,'\nValor a pagar: ',total)
+    elif Form_pagamento=='cartão':
+        total=preco_produto
+        print('Nome do produto: ',nome,'\nPreço: ',preco_produto,'\nDesconto:não tem desconto','\nValor a pagar: ',total)
+        
+    resposta=input('Deseja fazer outra compra: (s/n)')
