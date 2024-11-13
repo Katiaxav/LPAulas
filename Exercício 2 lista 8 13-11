@@ -1,0 +1,27 @@
+# Inicializa uma lista vazia para armazenar os nomes e idades
+pessoas = []
+
+while True:
+   # Solicita que o usuário insira um nome
+   nome = input('Digite um nome: ') 
+   idade = int(input('Digite uma idade: '))  # Converte a idade para um inteiro
+   pessoas.append((nome, idade))  # Adiciona o nome e a idade à lista
+
+   # Verifica a faixa etária e imprime a mensagem apropriada
+   if idade <= 16:
+      print("Você é menor de idade:",idade,"Não precisa votar.")
+   elif idade == 17 or idade >= 70: 
+      print("Você é maior de idade:",idade,"Seu voto é facultativo.")
+   else:
+      print("Seu voto é obrigatório.")
+        
+   # Pergunta se o usuário deseja inserir um novo nome
+   continuar = input("Deseja inserir um novo nome? (s/n): ")
+    
+   if continuar == 'n':
+      break  # Sai do loop se o usuário não quiser continuar
+
+# Exibe todos os nomes inseridos
+print("\nRegistros:")
+for pessoa in pessoas:
+    print(pessoa[0], pessoa[1])
