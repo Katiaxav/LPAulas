@@ -1,0 +1,23 @@
+rep01='s'
+while rep01=='s':
+    print('digite quatro números:')
+    num1=float(input())
+    num2=float(input())
+    num3=float(input())
+    num4=float(input())
+    
+    print('Deseja fazer qual tipo de calculo? (soma/media/multiplicação)')
+    resposta=input()
+    
+    if resposta=='soma':
+        soma=num1+num2+num3+num4
+        print('A soma dos números selecionados é: ',soma)
+    elif resposta=='media':
+        media=(num1+num2+num3+num4)/4
+        print('A média dos números selecionados é: ',media)
+    elif resposta=='multiplicação':
+        multiplicação=num1*num2*num3*num4
+        print('A multiplicação dos números selecionados é: ',multiplicação)
+        
+    print('Deseja fazer outro calculo com números diferentes? (s/n)')
+    rep01=input()
