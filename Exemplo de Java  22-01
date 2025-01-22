@@ -1,0 +1,31 @@
+import java.sql.SQLOutput;
+
+public class Main {
+    public static void main(String[]args){
+        System.out.println("Olá Mundo!");
+        System.out.println("Kátia Xavier");
+        System.out.println("Tenho 45 anos");
+        System.out.println("Estou Desempregada.");
+        int num1;
+        int num2;
+        int soma;
+        int pot;
+        double multi;
+        double divisao;
+
+        num1=2;
+        num2=10;
+        soma= num1 + num2;
+        multi= num1 * num2;
+        divisao= num2 / num1;
+        
+        String nome;
+        int num;
+        num = 23;
+        System.out.println(num);
+        System.out.println(soma);
+        System.out.println(multi);
+        System.out.println(divisao);
+        
+           }
+}
