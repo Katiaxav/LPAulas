@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Atividade {
+    public static void main(String[] args) {
+        int num1;
+        double c;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite um número");
+        num1 = scanner.nextInt();
+        c= num1 * 100;
+        System.out.print("O centimetro é " + c);
+    }
+
+
+}
