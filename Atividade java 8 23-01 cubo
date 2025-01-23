@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite um número.");
+        double num = sc.nextDouble();
+
+        // calcular o cubo do número
+        double cubo = Math.pow(num, 3);
+        System.out.println("O cubo de" + num + " é " + cubo);
+
+    }
+
+
+}
+ 
