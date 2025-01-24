@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor do tempo pecorrido:");
+        double tempo = sc.nextDouble();
+        System.out.println("Digite o valor da distância pecorrida");
+        double distancia = sc.nextDouble();
+        double velocidade = distancia / tempo;
+        System.out.println("A velocidade média pecorrida foi de: " + velocidade);
+
+    }
+
+
+}
