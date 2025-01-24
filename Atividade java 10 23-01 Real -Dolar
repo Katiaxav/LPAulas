@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor do real brasileiro para ser convertido em Dolar:");
+        double real = sc.nextDouble();
+        double dolar= 5.92;
+        double valor = real / dolar;
+        System.out.println("O Valor da conversão é: " + valor);
+
+    }
+
+
+}
