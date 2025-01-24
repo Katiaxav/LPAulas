@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Insira o valor da coordenada x e da coordenada y do primeiro ponto");
+        double x = scanner.nextDouble();
+        double y = scanner.nextDouble();
+        // lista de coordenada do primeiro ponto
+        System.out.println("Insira o valor da coordenada x e da coordenada y do segundo ponto");
+        double x2 = scanner.nextDouble();
+        double y2 = scanner.nextDouble();
+        // Lista de coordernada do segundo ponto
+        double distancia = Math.sqrt(Math.pow(x2 - x, 2) + Math.pow(y2 - y, 2));
+        System.out.println("Distancia: " + distancia);
+
+    }
+
+
+}
