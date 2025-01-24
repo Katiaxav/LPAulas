@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double min = 1;
+        double max = 100;
+        int aleatorio = (int) (Math.random()*(max-min+1)+min);
+        System.out.println(aleatorio);
+
+
+    }
+
+
+}
