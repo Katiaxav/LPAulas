@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Atividade {
+    public static void main(String[] args) {
+        double cateto1;
+        double cateto2;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o primeiro cateto.");
+        cateto1 = sc.nextDouble();
+        System.out.println("Digite o segundo cateto.");
+        cateto2 = sc.nextDouble();
+        double hipotenusa= (double) Math.round(Math.sqrt(Math.pow(cateto1,2) + Math.pow(cateto2,2)));
+        System.out.println("O valor da hipotenusa é: " + hipotenusa);
+
+
+    }
+
+
+}
