@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o raio do cilindro:");
+        double raio = sc.nextDouble();
+        System.out.println("Digite a altura do cilindro:");
+        double altura = sc.nextDouble();
+        double areaCilindro = 2*Math.PI * raioCilindro * (raioCilindro + alturaCilindro);
+        System.out.println(" A area do Cilindro é:" + areaCilindro);
+       
+
+
+    }
+
+
+}
