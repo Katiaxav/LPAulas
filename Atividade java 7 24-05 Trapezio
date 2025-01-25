@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor da base menor do trapezio: :");
+        double baseMenor = sc.nextDouble();
+        System.out.println("Digite o valor da base maior do trapezio: :");
+        double baseMaior = sc.nextDouble();
+        System.out.println("Digite valor da altura do trapezio:");
+        double alturaTrapezio = sc.nextDouble();
+        double areaTrapezio = (baseMenor + baseMaior) * (alturaTrapezio)/2;
+        System.out.println("O valor da area do trapezio é: " + areaTrapezio);
+
+
+
+
+    }
+
+
+}
