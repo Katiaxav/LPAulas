@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor em grau para fazer aa conversao em radiano:");
+        double grau = sc.nextDouble();
+        double radiano = grau * Math.PI / 180;
+        System.out.println("O valor em radiano é " + radiano);
+
+
+
+    }
+
+
+}
