@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Atividadejava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite um número.");
+        double numero = sc.nextInt();
+        String resultado = (numero %2==0)?
+            "Numero é par " : "Numero é impar";
+        System.out.println(resultado);
+
+
+
+    }
+}
