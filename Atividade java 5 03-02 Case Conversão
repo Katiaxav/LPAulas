@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class java {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite qual conversão você deseja fazer?: ");
+        System.out.println(" 1- Metro para centimetro");
+        System.out.println(" 2- Quilograma para grama");
+        System.out.println(" 3- Celsius para fahrenheit");
+        int conversao = sc.nextInt();
+        switch (conversao) {
+
+            case 1:
+                System.out.println("Digite quantos metros você deseja converter?");
+                double metros = sc.nextDouble();
+                double centimetro = metros * 100;
+                System.out.println("O valor de metros para centimetros é: " + centimetro);
+                break;
+            case 2:
+                System.out.println(" Digite quantos quilos você deseja converter?");
+                double quilos = sc.nextDouble();
+                double gramas = quilos * 1000;
+                System.out.println("O valor em quilos para grama é : " + gramas );
+                break;
+            case 3:
+                System.out.println("Digite o valor celsius para fahrenheit");
+                double celsius = sc.nextDouble();
+                double fahrenheit = (celsius * 9 / 5) + 32;
+                System.out.println("O valor em celsius para fahrenheit é: " + fahrenheit);
+                break;
+            case 4:
+                System.out.println("você é um idoso");
+                break;
+
+        }
+    }
+}
