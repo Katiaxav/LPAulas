@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class java {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite a sua idade:");
+        int idade = sc.nextInt();
+        int faxetaria = 0;
+        if (idade <=11){
+            faxetaria = 1;
+        } else if (idade >=12 && idade <=17){
+            faxetaria = 2;
+        } else if (idade >=18 && idade <= 60){
+            faxetaria = 3;
+        } else if (idade >=65 && idade <=100){
+            faxetaria = 4;
+        }
+        switch (faxetaria) {
+            case 1:
+                System.out.println("Você é uma criança");
+               String nome = sc.next();
+                break;
+            case 2:
+                System.out.println("Você é um adolescente");
+                break;
+            case 3:
+                System.out.println("Você é um adulto");
+                break;
+            case 4:
+                System.out.println("você é um idoso");
+                break;
+
+        }
+    }
+}
