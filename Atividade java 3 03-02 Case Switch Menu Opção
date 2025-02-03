@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class java {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o primeiro numero 1,2,3,4");
+        int num1 = sc.nextInt();
+
+
+        switch (num1) {
+            case 1:
+                System.out.println("Informe o nome Cadastrar Cliente");
+               String nome = sc.next();
+                break;
+            case 2:
+                System.out.println("Consultar Cliente");
+                break;
+            case 3:
+                System.out.println("Excluir Cliente ");
+                break;
+            case 4:
+                System.out.println("Programa Finalizado");
+                break;
+
+        }
+    }
+}
