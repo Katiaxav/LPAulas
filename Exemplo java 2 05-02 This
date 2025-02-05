@@ -1,0 +1,15 @@
+  class Carro{
+    String modelo;
+    String cor;
+
+    Carro(String modelo, String cor){
+        this.modelo = modelo;
+        this.cor = cor;
+    }
+
+        public static void main(String[] args) {
+            Carro meucarro = new Carro("Fusca","Azul");
+            System.out.println(meucarro.modelo);
+            System.out.println(meucarro.cor);
+        }
+}
