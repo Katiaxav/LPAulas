@@ -1,0 +1,22 @@
+class Pessoa{
+    String nome;
+    int idade;
+    String cpf;
+    void andar(){
+        System.out.println("A pessoa está andando");
+    }
+    void falar(){
+        System.out.println("A pessoa está falando");
+    }
+    void dormir() {
+        System.out.println("A pessoa está dormindo");
+    }
+    public static void main(String[] args) {
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.nome = "Maria";
+        pessoa1.idade= 30;
+        pessoa1.cpf= "123.456.789-00";
+        pessoa1.andar();//Saída:A pessoa está andando
+        pessoa1.falar();//Saída: A pessoa está falando
+    }
+}
