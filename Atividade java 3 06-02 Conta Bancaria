@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class ContaBancaria {
+    int numero;
+    double saldo;
+    public ContaBancaria(int numero, double saldo){
+        this.numero = numero;
+        this.saldo = saldo;
+    }
+        public void getDepositar(double valor){
+        this.saldo += valor;
+        }
+        public boolean sacar(double valor){
+        if(this.saldo >= valor){
+            this.saldo -= valor;
+            System.out.println();
+            System.out.println(valor + "Realizado com sucesso");
+            return true;
+        }
+        else {
+            System.out.println("Saldo Insuficiente");
+            return false;
+        }
+        }
+        public double getSaldo(){
+        return saldo;
+        }
+        public double getNumero(){
+        return numero;
+        }
+        public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o numero da conta:");
+        int numero = sc.nextInt();
+        System.out.println("Digite o saldo da saldo:");
+        double saldo = sc.nextDouble();
+        System.out.println("Digite o valor do seu saque");
+        double valor = sc.nextDouble();
+        ContaBancaria conta = new ContaBancaria(numero, saldo);
+        conta.sacar(valor);
+        System.out.println("Seu saldo atual é de: " + conta.getSaldo());
+
+    }
+
+}
+
+
