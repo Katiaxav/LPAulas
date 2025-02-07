@@ -1,0 +1,23 @@
+public class Nome {
+    private String nome;
+    private int idade;
+    private String endereco;
+
+    // Construtor
+    public Nome(String nome, int idade, String endereco) {
+        this.nome = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+    }
+
+    // Método para apresentar a pessoa
+    public void apresentar() {
+        System.out.println("Olá, meu nome é " + nome + ", tenho " + idade + " anos e moro em " + endereco + ".");
+    }
+
+    // Método principal para testar a classe
+    public static void main(String[] args) {
+        Nome pessoa = new Nome("Kátia", 45, "Rua F 278");
+        pessoa.apresentar();
+    }
+}
