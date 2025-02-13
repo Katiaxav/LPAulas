@@ -1,0 +1,27 @@
+import java.util.Random;
+
+public class Array {
+    public static void main(String[] args) {
+        int[] a = new int[10];
+        Random rand = new Random();
+        for (int i = 0; i < a.length; i++) {
+            a[i] = rand.nextInt(100);
+        }
+        int menor = a[0];
+        int maior = a[0];
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] < menor) {
+            menor = a[i];
+            }
+            if (a[i] > maior) {
+                maior = a[i];
+            }
+        }
+        System.out.println("Lista de numeros inteiros:");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    System.out.println("\nMenor valor: " + menor);
+        System.out.println("Maior valor: " + maior);
+        }
+    }
